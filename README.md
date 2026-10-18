@@ -40,19 +40,21 @@ To improve the user experience during long clinical generations, a `TextStreamer
 The prediction logic is wrapped in a `gradio` interface (`gr.Interface`). The application dynamically applies the model's `chat_template` behind the scenes, ensuring the end-user only needs to upload an image via the UI to trigger the inference pipeline. To mitigate high hosting costs for an 11B VLM (requires 15GB+ VRAM), the Gradio app is configured with `share=True` to serve the application directly from the Colab GPU environment for testing.
 
 ## 📊 Training Details
-* **Training Graphs:**
+Below are the training graphs demonstrating the loss reduction during the finetuning process:
   
   ![Training Graphs](https://github.com/user-attachments/assets/0986755c-4672-4f36-820e-e2e26638234a)
 
-* **Run Summary:**
+Run summary logged during training:
   
   ![Run Summary](https://github.com/user-attachments/assets/7a3d62a6-9ce6-449b-a4a3-c51710029d98)
 
 ## 🖥️ User Interface
+This system provides a clean Gradio user interface for immediate testing.
+
 ![Gradio UI](https://github.com/user-attachments/assets/03ef7086-1ef9-462d-bd42-99a9b461b312)
 
 
-*Testing with an input:*
+Testing the application with an input:
 
 ![Testing Input](https://github.com/user-attachments/assets/0ff10875-8aee-4f89-b69a-f9c6d30deee6)
-```<FollowUp>Is this final format exactly what you need for your repository?</FollowUp>
+
