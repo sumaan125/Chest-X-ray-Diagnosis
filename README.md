@@ -97,21 +97,21 @@ The prediction logic is wrapped in a `gradio` interface (`gr.Interface`). The ap
 ## 📊 Training Details
 Below are the training graphs demonstrating the loss reduction during the finetuning process:
   
-  ![Training Graphs](https://github.com/user-attachments/assets/0986755c-4672-4f36-820e-e2e26638234a)
+  ![Training Graphs](images/training_graphs.png)
 
 Run summary logged during training:
   
-  ![Run Summary](https://github.com/user-attachments/assets/7a3d62a6-9ce6-449b-a4a3-c51710029d98)
+  ![Run Summary](images/run_summary.png)
 
 ## 🖥️ User Interface
 This system provides a clean Gradio user interface for immediate testing.
 
-![Gradio UI](https://github.com/user-attachments/assets/03ef7086-1ef9-462d-bd42-99a9b461b312)
+![Gradio UI](images/gradio_ui.png)
 
 
 Testing the application with an input:
 
-![Testing Input](https://github.com/user-attachments/assets/0ff10875-8aee-4f89-b69a-f9c6d30deee6)
+![Testing Input](images/testing_input.png)
 
 ## 🚀 How to Run
 1. **Fine-tuning:** open `llama_3.2_11b_vision_finetuning_kaggle.ipynb` on Kaggle/Colab with a T4 GPU, add `HF_TOKEN` and `wandb_api_key` as secrets, and run all cells.
